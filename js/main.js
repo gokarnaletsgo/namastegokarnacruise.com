@@ -65,3 +65,20 @@
 
 })(jQuery);
 
+
+
+
+$('.gallery-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1200: { items: 3 }
+    }
+});
