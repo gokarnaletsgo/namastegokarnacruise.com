@@ -1010,18 +1010,20 @@
 
 .custom-cruise-banner {
     position: relative;
-    background: linear-gradient(
-        135deg,
-        rgba(33, 37, 41, 0.88),
-        rgba(33, 37, 41, 0.78)
-    );
-    border-radius: 14px;
-    padding: 28px 32px;
+    background: var(--bs-dark); /* same as footer */
+    border-radius: 12px;
+    padding: 18px 28px; /* reduced height */
     display: flex;
+
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 16px;
     overflow: hidden;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Subtle brand accent */
@@ -1040,9 +1042,11 @@
 /* Text */
 .custom-cruise-banner p {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.4;
     color: rgba(255, 255, 255, 0.75);
 }
+
 
 /* Button */
 .custom-cruise-banner .banner-action .btn {
